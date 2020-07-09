@@ -1,0 +1,12 @@
+{
+    "name": "huiyang/lesson6",
+    "authors": [
+        {
+            "name": "Hui Yang",
+            "email": "chy1988@antwebstudio.com"
+        }
+    ],
+    "require": {
+        "pqrs/helloworld": "@dev"
+    }
+}
