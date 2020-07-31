@@ -1,9 +1,22 @@
 <?php
+namespace App;
+
 use HelloWorld\SayHello;
+
 /*
 Chapter 6: Composer
 - install composer
 - namespace
+*/
+
+/*
+use System\ClassName3;
+use ClassName4;
+
+$app = new ClassName; // App\ClassName
+$app = new \ClassName2; // ClassName2
+$app = new ClassName3 // System\ClassName3
+$app = new ClassName4 // ClassName4
 */
 
 /* To install composer */
