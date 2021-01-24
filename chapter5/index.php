@@ -18,6 +18,53 @@ class Animal {
 	}
 }
 
+interface Buyable {
+	public function getSku();
+}
+
+class Book implements Buyable {
+	public function getSku() {
+
+	}
+}
+
+class Course implements Buyable {
+	public function getSku() {
+
+	}
+}
+
+class Quotation {
+
+}
+
+$products = [
+	new Course,
+	new Book,
+	new Course,
+	new Quotation,
+];
+
+foreach ($buyable as $buyableObject) {
+	if ($buyableObject instanceof Course || $buyableObject instanceof Book || $buyableObject instanceof Laptop) {
+		// buy($buyableObject);
+	}
+
+	if ($buyableObject instanceof Buyable) {
+		// Cart::addItemBySku($buyableObject->getSku());
+	} else {
+		// do something else;
+
+	}
+}
+
+
+class Tiger extends Animal implements Moveable {
+	use CanMeow;
+	// use CanEat;
+	// use CanMove;
+}
+
 class Cat extends Animal {
 	use CanMeow;
 	

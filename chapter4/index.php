@@ -6,6 +6,9 @@ Chapter 4: Class and object
 */
 
 require __DIR__.'/form.php';
+// include __DIR__.'/form.php';
+// require_once __DIR__.'/form.php';
+// include_once __DIR__.'/form.php';
 
 $form = new Form($_POST);
 

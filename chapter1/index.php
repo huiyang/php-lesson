@@ -20,11 +20,17 @@ $variable;
 
 echo 'echo some text'; 
 
-$string = 'this is string';
+$string = "this is $variable string";
 $string = "this is string with variable >> \"$string\" ";
 
 $main = 'main string';
 $concanatedString = 'prefix_' . $main . '_suffix';
+
+$str1 = '5';
+$str2 = '6';
+
+echo $str1 + $str2; // 11
+echo $str1 . $str2; // 56
 
 $integer = 5;
 $anotherInteger = 6;

@@ -11,7 +11,7 @@ Chapter 2
 
 $a = '1';
 if ($a == 1) {
-	echo '<p>'.'string 1 == integer 1'.'</p>';
+	echo '<p>'.'string 1 == integer 1'.'</p>'; // output
 } else {
 	echo '<p>'.'string 1 != integer 1'.'</p>';
 }
@@ -19,7 +19,7 @@ if ($a == 1) {
 if ($a === 1) {
 	echo '<p>'.'string 1 === integer 1'.'</p>';
 } else {
-	echo '<p>'.'string 1 !== integer 1'.'</p>';
+	echo '<p>'.'string 1 !== integer 1'.'</p>'; // output
 }
 
 add(5, 3); // Add 2 digits
@@ -36,14 +36,17 @@ $array = [
 	'a',
 	'b',
 	'c',
+	56,
+	new \DateTime,
 ]; // indexed array
 
 echo '<p>'.$array[1].'</p>'; // b
 
+// associated array
 $array = [
 	'a' => 'apple',
 	'b' => 'boy',
-	'c' => 'cat',
+	'c jkjaklsdf -' => 'cat',
 ];
 
 echo '<p>'.$array['b'].'</p>'; // boy
@@ -69,6 +72,19 @@ $foreachArray = [
 	'b',
 	'c',
 ];
+for ($i = 0; $i < count($foreachArray); $i++) {
+	echo $foreachArray[$i]; // abc
+}
+
+var array = [];
+
+/*
+If you have learned javascript, you will know that in javascripti we can write:
+array.forEach((value, key) => {
+
+})
+*/
+
 foreach($foreachArray as $value) {
 	echo $value; // abc
 }

@@ -35,12 +35,21 @@ Chapter 3: Form
 					<a href="?leave=1">Leave</a>
 				</div>
 			</div>
+			</form>
 		<?php endif ?>
 		
 		
 		<h2>Value inside $_REQUEST</h2>
 		<pre>
 			<?= print_r($_REQUEST, 1) ?>
+		</pre>
+		<h2>Value inside $_POST</h2>
+		<pre>
+			<?= print_r($_POST, 1) ?>
+		</pre>
+		<h2>Value inside $_GET</h2>
+		<pre>
+			<?= print_r($_GET, 1) ?>
 		</pre>
 	</div>
 
